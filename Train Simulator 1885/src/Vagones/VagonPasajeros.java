@@ -1,24 +1,32 @@
 package Vagones;
+import java.awt.Color;
+import java.awt.Graphics2D;
+
 import trainSimulator1885.*;
+import Ventana.*;
 public class VagonPasajeros {
 	
-	public void agergarVagon(String datos,String pasajeros,String clase){
-		if(datos.equals("Suben")){
-			int p = Integer.parseInt(pasajeros);// p variable entera que guarda el numero de pasajeros 
-			if ( clase.equals("clase1")  ){
-				if(p < 11){
-					// dibujar un vagon de clase 1
-				}else {
-					
-				}  
-					
-					
-				
-			}else clase.equals("clase3");{
-			}
-			
-		}
+	
+	public VagonPasajeros(){
 		
+	}
+	
+	public void agregarVagones(String clase,int pasajeros){
+		Lista lista = new Lista();
+		Graphics2D g = null;
+		Dibujo dibujo = new Dibujo();
+			
+			if(clase.equals("clase1")){
+			 
+			
+			System.out.println("Vagon c1");
+			
+			
+		}else{
+			
+			System.out.println("Vagon c3");
+		}
+
 	
 		
 	}

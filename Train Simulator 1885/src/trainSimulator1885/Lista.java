@@ -29,9 +29,31 @@ public class Lista {
 			fin = nuevo;
 	}
 	
-	public void eliminarInicio(){
-		inicio = inicio.siguiente;
+	public void eliminarposicion(int elemento){
+		Nodo temp =inicio, anterior=null;
+		
+		if (temp == null)
+			System.out.println("lista vacioa");
+		else{
+			while(inicio != null){
+				if( inicio.getInfo()== elemento){
+					if(anterior == null){
+						inicio = inicio.getSiguiente();
+					}else{
+						anterior.siguiente = temp.siguiente;
+						break;
+						
+					}
+				}else{
+					anterior = temp;
+					temp = temp.siguiente;
+				}
+				
+			}
+		}
 	}
+	
+	
 	
 	public void imprimir(){
 		Nodo t = inicio;
