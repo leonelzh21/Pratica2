@@ -64,4 +64,27 @@ public class Lista {
 			
 		}
 	}
+	
+	boolean buscar (int elemento ){
+		Nodo temp = inicio;
+		while(temp!=null){
+			if(temp.getInfo()== elemento){
+				return true; 
+			}else
+				temp = temp.siguiente;
+			
+		}
+		return false;
+	}
+	
+	public void agregarPosicion(int elemento){
+		if(inicio == null){
+			inicio = new Nodo(elemento,null);
+		}else {
+			Nodo temp = inicio;
+			inicio = new Nodo(elemento,null);
+			inicio.siguiente = temp;
+		}
+	}
+	
 }

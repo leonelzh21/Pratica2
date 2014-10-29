@@ -16,7 +16,9 @@ public class Dibujo extends Canvas  {
 	@Override
 	public void paint(Graphics g){
 		g.setColor(Color.red);
-		
+		g.fillRect(400,150, 50, 50);
+		g.setColor(Color.RED);
+		g.fillRect(440, 175, 25, 25);
 	}
 	
 	
